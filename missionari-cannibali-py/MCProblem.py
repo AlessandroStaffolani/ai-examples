@@ -29,6 +29,8 @@ class MCProblem(search.Problem):
 
         self.current_state = self.initial
 
+        print(self.POSSIBLE_MOVES)
+
         search.Problem.__init__(self, self.initial, goal)
 
     def actions(self, state):
